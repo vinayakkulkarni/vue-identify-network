@@ -64,10 +64,10 @@ export default {
 
 ### Events
 
-* `changed<type>`: Emitted after network speed is identified, eg:
+* `network-type<type>`: Emitted after network speed is identified, eg:
 
 ```vue
-<detected-speed @changed="handleNetworkIdentified"></detected-speed>
+<detected-speed @network-type="handleNetworkIdentified"></detected-speed>
 ```
 
 ```js
