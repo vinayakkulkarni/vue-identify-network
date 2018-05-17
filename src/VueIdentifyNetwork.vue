@@ -3,10 +3,10 @@
     <div :class="unknownClass" v-if="type === 'Unknown'">
       <slot name="unknown"></slot>
     </div>
-    <div :class="slowClass" v-if="type === '2g'">
+    <div :class="slowClass" v-if="type === '2g' && type !== 'Unknown'">
       <slot name="slow"></slot>
     </div>
-    <div :class="fastClass" v-if="type !== '2g'">
+    <div :class="fastClass" v-if="type !== '2g' && type !== 'Unknown'">
       <slot name="fast"></slot>
     </div>
   </div>
@@ -30,13 +30,13 @@ export default {
     },
   },
   data: () => ({
-    type:
-      typeof window === 'undefined'
-        ? 'Unknown'
-        : navigator.connection.effectiveType,
+    type: null,
+    vendor: typeof window === 'undefined' ? 'Unknown' : navigator.vendor,
   }),
   mounted() {
-    this.type = navigator.connection.effectiveType || 'Unknown';
+    this.vendor.includes('Google') && this.type !== 'Unknown'
+      ? (this.type = navigator.connection.effectiveType)
+      : (this.type = 'Unknown');
     this.$emit('network-type', this.type);
   },
 };
