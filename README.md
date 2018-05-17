@@ -21,6 +21,9 @@ CDN: [UNPKG](https://unpkg.com/vue-identify-network/dist/) | [jsDelivr](https://
 ```vue
 <template>
   <detected-speed>
+    <span slot="unknown">
+      REEE! Unable to identify your network type.
+    </span>
     <span slot="slow">
       <img src="cat.gif" alt="you got slow internet">
     </span>
@@ -49,11 +52,13 @@ export default {
 
 ### Slots
 
+* `unknown`: The slot to show when we are unable to identify network type (`navigator.connection.effectiveType` === `"Unknown"`)
 * `slow`: The slot to show when internet is slow (`navigator.connection.effectiveType` === `"2g"`)
 * `fast`: The slot to show when internet is fast (`navigator.connection.effectiveType` !== `"2g"`)
 
 ### Props
 
+* `unknownClass`: Add your own classes to the `div`
 * `slowClass`: Add your own classes to the `div`
 * `fastClass`: Add your own classes to the `div`
 
