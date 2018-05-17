@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div :class="unknownClass" v-if="type === 'Unknown'">
+      <slot name="unknown"></slot>
+    </div>
     <div :class="slowClass" v-if="type === '2g'">
       <slot name="slow"></slot>
     </div>
@@ -13,6 +16,10 @@
 export default {
   name: 'VueIdentifyNetwork',
   props: {
+    unknownClass: {
+      type: String,
+      required: false,
+    },
     slowClass: {
       type: String,
       required: false,
@@ -29,18 +36,8 @@ export default {
         : navigator.connection.effectiveType,
   }),
   mounted() {
-    window.addEventListener('load', function() {
-      this.identifyConnection();
-    });
-  },
-  methods: {
-    identifyConnection() {
-      this.type = navigator.connection.effectiveType || 'Unknown';
-      this.$emit('changed', this.type);
-    },
-  },
-  render() {
-    return this.type;
+    this.type = navigator.connection.effectiveType || 'Unknown';
+    this.$emit('network-type', this.type);
   },
 };
 </script>
