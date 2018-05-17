@@ -4,6 +4,8 @@
 
 * Identify the Internet Speed ⚡️ your users have.
 
+* Demo Link -> [Click Here](https://goo.gl/WnVQHu)
+
 * This is [on GitHub](https://github.com/vinayakkulkarni/vue-detect-network) so let me know if I've b0rked it somewhere, give me a star :star: if you like it :beers:
 
 ## Install
