@@ -1,6 +1,10 @@
 var script = {
   name: 'VueIdentifyNetwork',
   props: {
+    unknownClass: {
+      type: String,
+      required: false
+    },
     slowClass: {
       type: String,
       required: false
@@ -16,19 +20,8 @@ var script = {
     };
   },
   mounted: function mounted() {
-    window.addEventListener('load', function () {
-      this.identifyConnection();
-    });
-  },
-
-  methods: {
-    identifyConnection: function identifyConnection() {
-      this.type = navigator.connection.effectiveType || 'Unknown';
-      this.$emit('identified-network', this.type);
-    }
-  },
-  render: function render() {
-    return this.type;
+    this.type = navigator.connection.effectiveType || 'Unknown';
+    this.$emit('network-type', this.type);
   }
 };
 
@@ -38,7 +31,7 @@ var __vue_render__ = function __vue_render__() {
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
-  return _c("div", [_vm.type === "2g" ? _c("div", { class: _vm.slowClass }, [_vm._t("slow")], 2) : _vm._e(), _vm._v(" "), _vm.type !== "2g" ? _c("div", { class: _vm.fastClass }, [_vm._t("fast")], 2) : _vm._e()]);
+  return _c("div", [_vm.type === "Unknown" ? _c("div", { class: _vm.unknownClass }, [_vm._t("unknown")], 2) : _vm._e(), _vm._v(" "), _vm.type === "2g" ? _c("div", { class: _vm.slowClass }, [_vm._t("slow")], 2) : _vm._e(), _vm._v(" "), _vm.type !== "2g" ? _c("div", { class: _vm.fastClass }, [_vm._t("fast")], 2) : _vm._e()]);
 };
 var __vue_staticRenderFns__ = [];
 __vue_render__._withStripped = true;
