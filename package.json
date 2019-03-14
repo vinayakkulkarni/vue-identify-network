@@ -38,21 +38,22 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babelify": "^8.0.0",
-    "browserify": "^16.2.2",
-    "jasmine-core": "^3.1.0",
-    "karma": "^2.0.2",
-    "karma-browserify": "^5.2.0",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "phantomjs-prebuilt": "^2.1.14",
+    "browserify": "^16.2.3",
+    "jasmine-core": "^3.3.0",
+    "karma": "^4.0.1",
+    "karma-browserify": "^5.3.0",
     "karma-jasmine": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4",
     "karma-spec-reporter": "^0.0.32",
-    "rollup": "^0.59.1",
-    "rollup-plugin-babel": "^3.0.4",
+    "phantomjs-prebuilt": "^2.1.14",
+    "rollup": "^0.59.4",
+    "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-uglify": "^3.0.0",
-    "rollup-plugin-vue": "^4.1.4",
-    "vue": "^2.5.16",
-    "vue-template-compiler": "^2.5.16",
-    "watchify": "^3.11.0"
+    "rollup-plugin-vue": "^4.7.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "vue": "^2.6.8",
+    "vue-template-compiler": "^2.6.8",
+    "watchify": "^3.11.1"
   },
   "licenses": [
     {
@@ -65,6 +66,6 @@
   },
   "homepage": "https://github.com/vinayakkulkarni/vue-identify-network#readme",
   "dependencies": {
-    "npm": "^6.0.1"
+    "npm": "^6.9.0"
   }
 }
