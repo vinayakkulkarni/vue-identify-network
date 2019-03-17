@@ -64,15 +64,19 @@ export default {
 
 ### Events
 
-* `network-type<type>`: Emitted after network speed is identified, eg:
+* `network-type<type>`: Emitted after network type is identified
+* `network-speed<downlink>`: Emitted after network speed is identified
 
 ```vue
-<detected-speed @network-type="handleNetworkIdentified"></detected-speed>
+<detected-speed @network-type="handleNetworkIdentified" @network-speed="handleNetworkSpeed"></detected-speed>
 ```
 
 ```js
 function handleNetworkIdentified(type) {
-  console.log(type);
+  console.log('connection type: ', type);
+}
+function handleNetworkSpeed(speed) {
+  console.log('downlink: ', speed);
 }
 ```
 
@@ -89,4 +93,4 @@ function handleNetworkIdentified(type) {
 **vue-identify-network** © [Vinayak](https://github.com/vinayakkulkarni), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/vue-identify-network/contributors)).
 
-> [vinayak.site](https://vinayak.site) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
+> [vinayak.pw](https://vinayak.pw) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
