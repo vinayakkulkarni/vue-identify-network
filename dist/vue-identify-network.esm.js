@@ -17,12 +17,35 @@ var script = {
   data: function data() {
     return {
       type: null,
+      downLink: null,
       vendor: typeof window === 'undefined' ? 'Unknown' : navigator.vendor
     };
   },
   mounted: function mounted() {
-    this.vendor.includes('Google') && this.type !== 'Unknown' ? this.type = navigator.connection.effectiveType : this.type = 'Unknown';
-    this.$emit('network-type', this.type);
+    var t = this;
+    if (t.vendor.includes('Google') && t.type !== 'Unknown') {
+      t.type = navigator.connection.effectiveType;
+      t.downLink = navigator.connection.downlink;
+    } else {
+      t.type = 'Unknown';
+      t.downLink = 'Unknown';
+    }
+    t.$emit('network-type', t.type);
+    t.$emit('network-speed', t.downLink);
+    navigator.connection.addEventListener('change', t.updateConnectionMeta);
+  },
+  beforeDestroy: function beforeDestroy() {
+    navigator.connection.removeEventListener('change', this.updateConnectionMeta);
+  },
+
+  methods: {
+    updateConnectionMeta: function updateConnectionMeta(e) {
+      var t = this;
+      t.type = e.currentTarget && e.currentTarget.effectiveType;
+      t.downLink = e.currentTarget && e.currentTarget.downlink;
+      t.$emit('network-type', t.type);
+      t.$emit('network-speed', t.downLink);
+    }
   }
 };
 
