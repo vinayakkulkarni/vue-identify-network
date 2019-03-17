@@ -31,6 +31,7 @@ export default {
   },
   data: () => ({
     type: null,
+    downLink: null,
     vendor: typeof window === 'undefined' ? 'Unknown' : navigator.vendor,
   }),
   mounted() {
