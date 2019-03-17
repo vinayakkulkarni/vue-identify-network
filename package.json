@@ -5,7 +5,7 @@
   "author": {
     "name": "Vinayak Kulkarni",
     "email": "vinayak.kulkarni@live.com",
-    "url": "https://vinayak.site"
+    "url": "https://vinayak.pw"
   },
   "private": false,
   "main": "dist/vue-identify-network.min.js",
@@ -48,24 +48,16 @@
     "phantomjs-prebuilt": "^2.1.14",
     "rollup": "^0.59.4",
     "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.2.1",
     "rollup-plugin-uglify": "^3.0.0",
     "rollup-plugin-vue": "^4.7.2",
-    "rollup-plugin-commonjs": "^9.2.1",
-    "vue": "^2.6.8",
-    "vue-template-compiler": "^2.6.8",
+    "vue": "^2.6.9",
+    "vue-template-compiler": "^2.6.9",
     "watchify": "^3.11.1"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/vinayakkulkarni/vue-identify-network/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vinayakkulkarni/vue-identify-network/issues"
   },
-  "homepage": "https://github.com/vinayakkulkarni/vue-identify-network#readme",
-  "dependencies": {
-    "npm": "^6.9.0"
-  }
+  "homepage": "https://github.com/vinayakkulkarni/vue-identify-network#readme"
 }
