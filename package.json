@@ -10,7 +10,9 @@
   "private": false,
   "main": "dist/vue-identify-network.min.js",
   "module": "dist/vue-identify-network.esm.js",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "keywords": [
     "vuejs",
     "detect",
@@ -49,6 +51,7 @@
     "eslint-config-vue": "^2.0.2",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.3",
     "jasmine-core": "^3.5.0",
     "karma": "^4.4.1",
     "karma-browserify": "^7.0.0",
