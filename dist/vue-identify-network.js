@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global.VueIdentifyNetwork = factory());
+  (global = global || self, global.VueIdentifyNetwork = factory());
 }(this, (function () { 'use strict';
 
   var script = {
@@ -9,15 +9,18 @@
     props: {
       unknownClass: {
         type: String,
-        required: false
+        required: false,
+        "default": null
       },
       slowClass: {
         type: String,
-        required: false
+        required: false,
+        "default": null
       },
       fastClass: {
         type: String,
-        required: false
+        required: false,
+        "default": null
       }
     },
     data: function data() {
@@ -29,6 +32,7 @@
     },
     mounted: function mounted() {
       var t = this;
+
       if (t.vendor.includes('Google') && t.type !== 'Unknown') {
         t.type = navigator.connection.effectiveType;
         t.downLink = navigator.connection.downlink;
@@ -36,6 +40,7 @@
         t.type = 'Unknown';
         t.downLink = 'Unknown';
       }
+
       t.$emit('network-type', t.type);
       t.$emit('network-speed', t.downLink);
       navigator.connection.addEventListener('change', t.updateConnectionMeta);
@@ -43,7 +48,6 @@
     beforeDestroy: function beforeDestroy() {
       navigator.connection.removeEventListener('change', this.updateConnectionMeta);
     },
-
     methods: {
       updateConnectionMeta: function updateConnectionMeta(e) {
         var t = this;
@@ -99,8 +103,8 @@
 
       options._ssrRegister = hook;
     } else if (style) {
-      hook = shadowMode ? function () {
-        style.call(this, createInjectorShadow(this.$root.$options.shadowRoot));
+      hook = shadowMode ? function (context) {
+        style.call(this, createInjectorShadow(context, this.$root.$options.shadowRoot));
       } : function (context) {
         style.call(this, createInjector(context));
       };
@@ -123,30 +127,60 @@
     return script;
   }
 
-  var normalizeComponent_1 = normalizeComponent;
+  /* script */
+  const __vue_script__ = script;
 
-  var __vue_script__ = script;
-
-  var __vue_render__ = function __vue_render__() {
+  /* template */
+  var __vue_render__ = function() {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
-    return _c("div", [_vm.type === "Unknown" ? _c("div", { class: _vm.unknownClass }, [_vm._t("unknown")], 2) : _vm._e(), _vm._v(" "), _vm.type === "2g" && _vm.type !== "Unknown" ? _c("div", { class: _vm.slowClass }, [_vm._t("slow")], 2) : _vm._e(), _vm._v(" "), _vm.type !== "2g" && _vm.type !== "Unknown" ? _c("div", { class: _vm.fastClass }, [_vm._t("fast")], 2) : _vm._e()]);
+    return _c("div", [
+      _vm.type === "Unknown"
+        ? _c("div", { class: _vm.unknownClass }, [_vm._t("unknown")], 2)
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.type === "2g" && _vm.type !== "Unknown"
+        ? _c("div", { class: _vm.slowClass }, [_vm._t("slow")], 2)
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.type !== "2g" && _vm.type !== "Unknown"
+        ? _c("div", { class: _vm.fastClass }, [_vm._t("fast")], 2)
+        : _vm._e()
+    ])
   };
   var __vue_staticRenderFns__ = [];
   __vue_render__._withStripped = true;
 
-  var __vue_inject_styles__ = undefined;
+    /* style */
+    const __vue_inject_styles__ = undefined;
+    /* scoped */
+    const __vue_scope_id__ = undefined;
+    /* module identifier */
+    const __vue_module_identifier__ = undefined;
+    /* functional template */
+    const __vue_is_functional_template__ = false;
+    /* style inject */
+    
+    /* style inject SSR */
+    
+    /* style inject shadow dom */
+    
 
-  var __vue_scope_id__ = undefined;
+    
+    const __vue_component__ = normalizeComponent(
+      { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
+      __vue_inject_styles__,
+      __vue_script__,
+      __vue_scope_id__,
+      __vue_is_functional_template__,
+      __vue_module_identifier__,
+      false,
+      undefined,
+      undefined,
+      undefined
+    );
 
-  var __vue_module_identifier__ = undefined;
-
-  var __vue_is_functional_template__ = false;
-
-
-  var VueIdentifyNetwork = normalizeComponent_1({ render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, undefined, undefined);
-
-  return VueIdentifyNetwork;
+  return __vue_component__;
 
 })));
