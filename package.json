@@ -68,7 +68,7 @@
     "shipjs": "^0.23.0",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11",
-    "watchify": "^3.11.1"
+    "watchify": "^4.0.0"
   },
   "license": "MIT",
   "bugs": {
