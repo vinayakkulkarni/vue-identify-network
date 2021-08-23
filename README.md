@@ -53,7 +53,7 @@
 
 ## Demo
 
-[![Edit vue-identify-network demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-identify-network-demo-8itb1?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit vue-identify-network-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/friendly-swartz-7rpqv?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Requirements
 
