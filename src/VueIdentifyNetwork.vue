@@ -1,69 +1,86 @@
 <template>
   <div>
     <div v-if="type === 'Unknown'" :class="unknownClass">
-      <slot name="unknown"></slot>
+      <slot name="unknown" />
     </div>
-    <div v-if="type === '2g' && type !== 'Unknown'" :class="slowClass">
-      <slot name="slow"></slot>
+    <div v-if="type === '2g'" :class="slowClass">
+      <slot name="slow" />
     </div>
     <div v-if="type !== '2g' && type !== 'Unknown'" :class="fastClass">
-      <slot name="fast"></slot>
+      <slot name="fast" />
     </div>
   </div>
 </template>
 
-<script>
-  export default {
+<script lang="ts">
+  import {
+    defineComponent,
+    onBeforeUnmount,
+    onMounted,
+    ref,
+  } from '@vue/composition-api';
+  import type { Ref, SetupContext, PropType } from '@vue/composition-api';
+  import type { NetworkType, Evented } from '../types';
+
+  export default defineComponent({
     name: 'VueIdentifyNetwork',
     props: {
       unknownClass: {
-        type: String,
+        type: String as PropType<string | null>,
         required: false,
         default: null,
       },
       slowClass: {
-        type: String,
+        type: String as PropType<string | null>,
         required: false,
         default: null,
       },
       fastClass: {
-        type: String,
+        type: String as PropType<string | null>,
         required: false,
         default: null,
       },
     },
-    data: () => ({
-      type: null,
-      downLink: null,
-      vendor: typeof window === 'undefined' ? 'Unknown' : navigator.vendor,
-    }),
-    mounted() {
-      const t = this;
-      if (t.vendor.includes('Google') && t.type !== 'Unknown') {
-        t.type = navigator.connection.effectiveType;
-        t.downLink = navigator.connection.downlink;
-      } else {
-        t.type = 'Unknown';
-        t.downLink = 'Unknown';
-      }
-      t.$emit('network-type', t.type);
-      t.$emit('network-speed', t.downLink);
-      navigator.connection.addEventListener('change', t.updateConnectionMeta);
-    },
-    beforeDestroy() {
-      navigator.connection.removeEventListener(
-        'change',
-        this.updateConnectionMeta,
+    emits: ['network-type', 'network-speed'],
+    setup(_, { emit }: SetupContext) {
+      const type: Ref<NetworkType> = ref(null);
+      const downLink: Ref<'Unknown' | number> = ref('Unknown');
+      const vendor: Ref<string> = ref(
+        typeof window === 'undefined' ? 'Unknown' : navigator.vendor,
       );
+
+      onMounted(() => {
+        if (vendor.value.includes('Google') && type.value !== 'Unknown') {
+          type.value = navigator.connection.effectiveType;
+          downLink.value = navigator.connection.downlink;
+        } else {
+          type.value = 'Unknown';
+          downLink.value = 'Unknown';
+        }
+        emit('network-type', type.value);
+        emit('network-speed', downLink.value);
+        navigator.connection.addEventListener('change', updateConnection);
+      });
+
+      onBeforeUnmount(() => {
+        navigator.connection.removeEventListener('change', updateConnection);
+      });
+
+      /**
+       * Updates the type & downLink info
+       *
+       * @param {Evented} e - The type & downlink info
+       */
+      function updateConnection(e: Evented): void {
+        type.value = e.currentTarget && e.currentTarget.effectiveType;
+        downLink.value = e.currentTarget && e.currentTarget.downlink;
+        emit('network-type', type.value);
+        emit('network-speed', downLink.value);
+      }
+
+      return {
+        type,
+      };
     },
-    methods: {
-      updateConnectionMeta(e) {
-        const t = this;
-        t.type = e.currentTarget && e.currentTarget.effectiveType;
-        t.downLink = e.currentTarget && e.currentTarget.downlink;
-        t.$emit('network-type', t.type);
-        t.$emit('network-speed', t.downLink);
-      },
-    },
-  };
+  });
 </script>

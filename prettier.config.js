@@ -1,3 +1,3 @@
 module.exports = {
-  ...require('@vinayakkulkarni/prettier-config-vue')
+  ...require('@vinayakkulkarni/prettier-config-vue'),
 };
