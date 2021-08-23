@@ -1,6 +1,6 @@
 {
   "name": "vue-identify-network",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Identify the network your users are using!",
   "types": "types/index.d.ts",
   "main": "dist/vue-identify-network.cjs.js",
