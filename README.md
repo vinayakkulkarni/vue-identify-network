@@ -13,6 +13,7 @@
 [![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/vinayakkulkarni/vue-identify-network?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/vue-identify-network/context:javascript)
 [![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/vue-identify-network)](https://github.com/vinayakkulkarni/vue-identify-network/graphs/contributors)
 
+[![built using janak](https://img.shields.io/badge/built%20using-janak-brightgreen)](https://github.com/vinayakkulkarni/janak)
 [![eslint](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/eslint?logo=eslint)](https://eslint.org/)
 [![prettier](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/prettier?logo=prettier)](https://prettier.io/)
 [![rollup](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/rollup?logo=rollup.js)](https://rollupjs.org/guide/en/)
