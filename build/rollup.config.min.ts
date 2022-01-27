@@ -4,6 +4,7 @@ import beep from '@rollup/plugin-beep';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import sucrase from '@rollup/plugin-sucrase';
+import { resolve as r } from 'path';
 import scss from 'rollup-plugin-scss';
 import { terser } from 'rollup-plugin-terser';
 import vue from 'rollup-plugin-vue';
@@ -24,20 +25,21 @@ export default {
   output: {
     file: pkg.cdn,
     format: 'umd',
-    name: 'VOffline',
+    name: 'VueIdentifyNetwork',
     exports: 'named',
     strict: true,
     sourcemap: true,
     banner,
     globals: {
-      vue: 'vue',
-      '@vue/composition-api': 'vueCompositionApi',
+      'vue-demi': 'VueDemi',
+      '@vue/composition-api': 'VueCompositionApi',
     },
   },
   plugins: [
     alias({
       entries: {
-        vue: 'vue/dist/vue.runtime.esm.js',
+        '@/*': r(__dirname),
+        '~/*': r(`${__dirname}/src`),
       },
     }),
     resolve({ extensions, browser: true }),
@@ -46,9 +48,10 @@ export default {
       exclude: 'node_modules/**',
     }),
     commonjs({ extensions, exclude: 'src/**' }),
-    vue({ css: false }),
+    vue(),
     scss({
-      output: 'dist/v-offline.min.css',
+      output: 'dist/vue-identify-network.min.css',
+      // @ts-ignore
       outputStyle: 'compressed',
     }),
     sucrase({
@@ -63,5 +66,5 @@ export default {
     }),
     beep(),
   ],
-  external: ['vue', '@vue/composition-api'],
+  external: ['vue-demi', '@vue/composition-api'],
 };

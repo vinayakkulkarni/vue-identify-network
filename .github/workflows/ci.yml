@@ -26,7 +26,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        node: [15, 16]
+        node: [17]
 
     steps:
       - name: Check out repository ✨
@@ -45,7 +45,7 @@ jobs:
           node-version: ${{ matrix.node }}
           check-latest: true
           registry-url: https://registry.npmjs.org
-          cache: 'npm' 
+          cache: 'npm'
 
       - name: Upgrade npm 🎉
         run: npm install -g npm@latest
@@ -57,13 +57,13 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          continue_on_error: false
           git_name: github-actions[bot]
           git_email: github-actions[bot]@users.noreply.github.com
           auto_fix: false
+          continue_on_error: false
           neutral_check_on_warning: true
           stylelint: true
-          stylelint_extensions: css,scss,vue
+          stylelint_extensions: css,sass,scss,vue
           eslint: true
           eslint_extensions: js,ts,vue
           prettier: true

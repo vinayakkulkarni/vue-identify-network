@@ -1,16 +1,25 @@
-import VueCompositionApi from '@vue/composition-api';
-import { VueConstructor } from 'vue';
-import VueIdentifyNetwork from './VueIdentifyNetwork.vue';
+import type { App as Application } from 'vue-demi';
+import { install, isVue2, isVue3, Vue2 } from 'vue-demi';
+import VueIdentifyNetwork from './components/VueIdentifyNetwork.vue';
 
 let installed = false;
+let plugin = null;
 
-const install = {
-  install(Vue: VueConstructor): void {
+if (isVue2) {
+  plugin = (app: typeof Vue2) => {
     if (installed) return;
-    Vue.use(VueCompositionApi);
-    Vue.component('VueIdentifyNetwork', VueIdentifyNetwork);
+    install(app);
+    app.component('VueIdentifyNetwork', VueIdentifyNetwork);
     installed = true;
-  },
-};
+  };
+}
 
-export default install;
+if (isVue3) {
+  plugin = (app: Application) => {
+    if (installed) return;
+    app.component('VueIdentifyNetwork', VueIdentifyNetwork);
+    installed = true;
+  };
+}
+
+export default plugin;

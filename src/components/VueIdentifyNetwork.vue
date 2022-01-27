@@ -1,26 +1,16 @@
-<template>
-  <div>
-    <div v-if="type === 'Unknown'" :class="unknownClass">
-      <slot name="unknown" />
-    </div>
-    <div v-if="type === '2g'" :class="slowClass">
-      <slot name="slow" />
-    </div>
-    <div v-if="type !== '2g' && type !== 'Unknown'" :class="fastClass">
-      <slot name="fast" />
-    </div>
-  </div>
-</template>
-
 <script lang="ts">
   import {
     defineComponent,
+    h,
     onBeforeUnmount,
     onMounted,
+    PropType,
+    Ref,
     ref,
-  } from '@vue/composition-api';
-  import type { Ref, SetupContext, PropType } from '@vue/composition-api';
-  import type { NetworkType, Evented } from '../types';
+    SetupContext,
+    VNode,
+  } from 'vue-demi';
+  import type { Evented, NetworkType } from '~/types';
 
   export default defineComponent({
     name: 'VueIdentifyNetwork',
@@ -42,13 +32,12 @@
       },
     },
     emits: ['network-type', 'network-speed'],
-    setup(_, { emit }: SetupContext) {
+    setup(props, { emit, slots }: SetupContext) {
       const type: Ref<NetworkType> = ref(null);
       const downLink: Ref<'Unknown' | number> = ref('Unknown');
       const vendor: Ref<string> = ref(
         typeof window === 'undefined' ? 'Unknown' : navigator.vendor,
       );
-
       onMounted(() => {
         if (vendor.value.includes('Google') && type.value !== 'Unknown') {
           type.value = navigator.connection.effectiveType;
@@ -61,11 +50,9 @@
         emit('network-speed', downLink.value);
         navigator.connection.addEventListener('change', updateConnection);
       });
-
       onBeforeUnmount(() => {
         navigator.connection.removeEventListener('change', updateConnection);
       });
-
       /**
        * Updates the type & downLink info
        *
@@ -77,10 +64,20 @@
         emit('network-type', type.value);
         emit('network-speed', downLink.value);
       }
-
-      return {
-        type,
-      };
+      let renderedSlot: VNode | undefined = undefined;
+      const unknown = h('div', { class: props.unknownClass }, [
+        h('span', {}, [slots.unknown && slots.unknown()]),
+      ]);
+      const slow = h('div', { class: props.slowClass }, [
+        h('span', {}, [slots.slow && slots.slow()]),
+      ]);
+      const fast = h('div', { class: props.fastClass }, [
+        h('span', {}, [slots.fast && slots.fast()]),
+      ]);
+      if (type.value === 'Unknown') renderedSlot = unknown;
+      if (type.value === '2g') renderedSlot = slow;
+      if (type.value !== '2g' && type.value !== 'Unknown') renderedSlot = fast;
+      return () => h('div', renderedSlot);
     },
   });
 </script>
