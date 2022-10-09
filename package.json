@@ -43,7 +43,7 @@
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-beep": "^1.0.0",
     "@rollup/plugin-commonjs": "^23.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-sucrase": "^4.0.0",
     "@types/node": "^18.8.2",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
