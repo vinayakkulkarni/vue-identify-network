@@ -69,7 +69,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^22.0.0",
     "typescript": "^4.3.5",
-    "vue": "^2.6.14",
+    "vue": "^3.2.44",
     "vue-template-compiler": "^2.6.14"
   },
   "keywords": [
