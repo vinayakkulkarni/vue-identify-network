@@ -25,8 +25,6 @@
 * Identify the Internet Speed ⚡️ your users have.
 * Built from scratch usign Vue 2 & Composition API with TypeScript
 * For Vue 2.x version – `npm i vue-identify-network@2`
-* For Vue 3.x version – `npm i vue-identify-network@3`
-
 
 ## Table of Contents
 
