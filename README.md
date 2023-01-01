@@ -1,8 +1,8 @@
 # Vue Identify Network ⚡️
 
-[![CI](https://img.shields.io/github/workflow/status/vinayakkulkarni/vue-identify-network/ci?logo=github-actions)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/ci.yml)
-[![CodeQL](https://img.shields.io/github/workflow/status/vinayakkulkarni/vue-identify-network/codeql?logo=github-actions)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/codeql.yml)
-[![Ship.js Trigger](https://img.shields.io/github/workflow/status/vinayakkulkarni/vue-identify-network/Ship%20js%20trigger?label=⛴%20Ship.js%20trigger)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/shipjs-trigger.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/ci.yml?logo=github-actions&branch=main)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/ci.yml)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/codeql.yml?logo=github-actions&branch=main)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/codeql.yml)
+[![Ship.js Trigger](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/shipjs-trigger.yml?label=⛴%20Ship.js%20trigger&branch=main)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/shipjs-trigger.yml)
 [![npm](https://img.shields.io/npm/dm/vue-identify-network?logo=npm)](http://npm-stat.com/charts.html?package=vue-identify-network)
 [![npm](https://img.shields.io/npm/v/vue-identify-network/latest?logo=npm)](https://www.npmjs.com/package/vue-identify-network)
 [![npm bundle size (version)](https://img.shields.io/bundlephobia/min/vue-identify-network/latest?label=@latest%20size&logo=vue.js)](https://bundlephobia.com/package/vue-identify-network@latest)
