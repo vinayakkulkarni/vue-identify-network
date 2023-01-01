@@ -36,4 +36,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./example/dist
-          cname: v-offline.netlify.app
+          cname: vue-identify-network.netlify.app
