@@ -5,12 +5,11 @@
   <v-identify-network>
     <template #unknown> REEE! Unable to identify your network type. </template>
     <template #slow>
-      <img src="cat.gif" alt="you got slow internet" />
+      <img src="/cat.gif" alt="you got slow internet" />
     </template>
     <template #fast>
       <video width="400" controls>
-        <source src="mov_bbb.mp4" type="video/mp4" />
-        <source src="mov_bbb.ogg" type="video/ogg" />
+        <source src="/video.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
     </template>
