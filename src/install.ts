@@ -1,16 +1,13 @@
-import VueCompositionApi from '@vue/composition-api';
-import { VueConstructor } from 'vue';
-import VueIdentifyNetwork from './VueIdentifyNetwork.vue';
+import { App as Application } from 'vue';
+import VueIdentifyNetwork from './components/VueIdentifyNetwork.vue';
 
 let installed = false;
 
-const install = {
-  install(Vue: VueConstructor): void {
-    if (installed) return;
-    Vue.use(VueCompositionApi);
-    Vue.component('VueIdentifyNetwork', VueIdentifyNetwork);
+const install = (app: Application) => {
+  if (!installed) {
+    app.component('VueIdentifyNetwork', VueIdentifyNetwork);
     installed = true;
-  },
+  }
 };
 
 export default install;

@@ -1,184 +1,196 @@
-# vue-identify-network ⚡️
+# Vue Identify Network ⚡️
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/vinayakkulkarni/vue-identify-network/ci?logo=github-actions)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/ci.yml)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/vinayakkulkarni/vue-identify-network/Ship%20js%20trigger?label=⛴%20Ship.js%20trigger)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/shipjs-trigger.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/vinayakkulkarni/vue-identify-network?sort=semver&logo=github)](https://github.com/vinayakkulkarni/vue-identify-network/releases)
-[![npm](https://img.shields.io/npm/v/vue-identify-network?logo=npm)](https://www.npmjs.com/package/vue-identify-network)
+[![CI](https://img.shields.io/github/workflow/status/vinayakkulkarni/vue-identify-network/ci?logo=github-actions)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/ci.yml)
+[![CodeQL](https://img.shields.io/github/workflow/status/vinayakkulkarni/vue-identify-network/codeql?logo=github-actions)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/codeql.yml)
+[![Ship.js Trigger](https://img.shields.io/github/workflow/status/vinayakkulkarni/vue-identify-network/Ship%20js%20trigger?label=⛴%20Ship.js%20trigger)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/shipjs-trigger.yml)
 [![npm](https://img.shields.io/npm/dm/vue-identify-network?logo=npm)](http://npm-stat.com/charts.html?package=vue-identify-network)
-[![npm bundle size (version)](https://img.shields.io/bundlephobia/min/vue-identify-network/latest)](https://bundlephobia.com/package/vue-identify-network@latest)
+[![npm](https://img.shields.io/npm/v/vue-identify-network/latest?logo=npm)](https://www.npmjs.com/package/vue-identify-network)
+[![npm bundle size (version)](https://img.shields.io/bundlephobia/min/vue-identify-network/latest?label=@latest%20size&logo=vue.js)](https://bundlephobia.com/package/vue-identify-network@latest)
+[![npm](https://img.shields.io/npm/v/vue-identify-network/legacy?logo=npm)](https://www.npmjs.com/package/vue-identify-network)
+[![npm bundle size (version)](https://img.shields.io/bundlephobia/min/vue-identify-network/legacy?label=@legacy%20size&logo=vue.js)](https://bundlephobia.com/package/vue-identify-network@legacy)
 [![npm type definitions](https://img.shields.io/npm/types/vue-identify-network)](https://github.com/vinayakkulkarni/vue-identify-network/blob/master/package.json)
-[![DeepScan grade](https://deepscan.io/api/teams/9055/projects/18331/branches/446995/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9055&pid=18331&bid=446995)
+[![DeepScan grade](https://deepscan.io/api/teams/9055/projects/16121/branches/339368/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9055&pid=16121&bid=339368)
 [![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinayakkulkarni/vue-identify-network)](https://snyk.io/test/github/vinayakkulkarni/vue-identify-network)
-[![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/vinayakkulkarni/vue-identify-network?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/vue-identify-network/alerts/)
-[![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/vinayakkulkarni/vue-identify-network?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/vue-identify-network/context:javascript)
-[![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/vue-identify-network)](https://github.com/vinayakkulkarni/vue-identify-network/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/vue-identify-network?logo=github)](https://github.com/vinayakkulkarni/vue-identify-network/graphs/contributors)
+[![FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fvue-identify-network.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fvue-identify-network?ref=badge_shield)
 
-[![built using janak](https://img.shields.io/badge/built%20using-janak-brightgreen)](https://github.com/vinayakkulkarni/janak)
 [![eslint](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/eslint?logo=eslint)](https://eslint.org/)
 [![prettier](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/prettier?logo=prettier)](https://prettier.io/)
-[![rollup](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/rollup?logo=rollup.js)](https://rollupjs.org/guide/en/)
+[![vite](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/vite?logo=vite)](https://vitejs.dev/)
 [![vue](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/vue?logo=vue.js)](https://vuejs.org/)
 [![typescript](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/typescript?logo=TypeScript)](https://www.typescriptlang.org/)
 
+⚠️ Docs are for Vue 3, for Vue 2 docs, [click here](https://github.com/vinayakkulkarni/vue-identify-network/tree/v2.0.0#vue-identify-network-%EF%B8%8F)
+
 ## Features
 
-* Identify the Internet Speed ⚡️ your users have.
-* Built from scratch usign Vue 2 & Composition API with TypeScript
-* For Vue 2.x version – `npm i vue-identify-network@2`
-* For Vue 3.x version – `npm i vue-identify-network@3`
-
+- Detect offline & online events for your vue app.
+- Built from scratch usign Vue 2 & Composition API with TypeScript
+- For Vue >= 3.x – `npm i vue-identify-network@latest`
+- For Vue 2 – `npm i vue-identify-network@2`
 
 ## Table of Contents
 
-- [vue-identify-network ⚡️](#vue-identify-network-️)
+- [Vue Identify Network ⚡️](#vue-identify-network-️)
   - [Features](#features)
   - [Table of Contents](#table-of-contents)
   - [Demo](#demo)
   - [Requirements](#requirements)
     - [Installation](#installation)
     - [Build Setup](#build-setup)
-  - [Usage](#usage)
-    - [Globally](#globally)
-      - [As a component](#as-a-component)
-      - [As a plugin](#as-a-plugin)
-    - [Locally](#locally)
-      - [Example](#example)
+    - [Usage](#usage)
+    - [Example](#example)
   - [API](#api)
     - [Slots](#slots)
     - [Props](#props)
     - [Events](#events)
-  - [Built with](#built-with)
   - [Contributing](#contributing)
   - [Author](#author)
 
 ## Demo
 
-[![Edit vue-identify-network-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/friendly-swartz-7rpqv?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit vue-identify-network demo](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/vue-identify-network?file=src/App.vue)
 
 ## Requirements
 
-* [vue](https://vuejs.org/) `^2.x`
-* [@vue/composition-api](https://v3.vuejs.org/guide/composition-api-introduction.html) `^1.x`
+- [vue](https://vuejs.org/) `^3.x`
 
 ### Installation
 
 ```sh
 npm install --save vue-identify-network
-npm install --save-dev @vue/composition-api
 ```
 
 CDN: [UNPKG](https://unpkg.com/vue-identify-network/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/vue-identify-network/dist/) (available as `window.VueIdentifyNetwork`)
 
 ### Build Setup
 
-``` bash
+```bash
 # install dependencies
-$ npm ci
+$ npm install
 
 # package the library
 $ npm run build
 ```
 
+### Usage
 
-## Usage
+Global component:
 
-### Globally
-
-#### As a component
-```javascript
-Vue.component('VueIdentifyNetwork', require('vue-identify-network'));
-```
-
-#### As a plugin
-
-```javascript
-import Vue from 'vue';
-import VueIdentifyNetwork from 'vue-identify-network';
-
-Vue.use(VueIdentifyNetwork);
-```
-
-### Locally
-
-```javascript
+```js
+// main.ts
 import { VueIdentifyNetwork } from 'vue-identify-network';
+import { createApp } from 'vue';
+
+const app = createApp({});
+app.component('VueIdentifyNetwork', VueIdentifyNetwork);
 ```
 
-#### Example
-<details>
-<summary>Locally imported as a component</summary>
-<br />
+Or use locally
 
-```html
-<vue-identify-network
-  @network-type="handleNetworkIdentified"
-  @network-speed="handleNetworkSpeed"
->
-  <template #unknown>
-    REEE! Unable to identify your network type.
-  </template>
-  <template #slow>
-    <img src="cat.gif" alt="you got slow internet" />
-  </template>
-  <template #fast>
-    <video width="400" controls>
-      <source src="mov_bbb.mp4" type="video/mp4" />
-      <source src="mov_bbb.ogg" type="video/ogg" />
-      Your browser does not support HTML5 video.
-    </video>
-  </template>
-</vue-identify-network>
-```
-
-```typescript
+```js
+// component.vue
+<script lang="ts">
+import { defineComponent } from 'vue';
 import { VueIdentifyNetwork } from 'vue-identify-network';
 
-Vue.component('example-component', {
+export default defineComponent({
   components: {
-    VueIdentifyNetwork
+    VueIdentifyNetwork,
   },
-  setup() {
-    function handleNetworkIdentified(type: string) {
-      console.log('connection type: ', type);
-    }
-    function handleNetworkSpeed(speed: number) {
-      console.log('downlink: ', speed);
-    }
-  }
+});
+</script>
+```
+
+For Nuxt 3, create a file in `plugins/vue-identify-network.ts`
+
+```js
+import { VueIdentifyNetwork } from 'vue-identify-network';
+
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component('VueIdentifyNetwork', VueIdentifyNetwork);
 });
 ```
-</details>
 
+then import the file in `nuxt.config.{j|t}s`:
+
+```js
+export default {
+  // ...
+  plugins: [
+    // ...
+    { src: '~/plugins/vue-identify-network', mode: 'client' },
+    // ...
+  ],
+  // ...
+};
+```
+
+### Example
+
+```html
+<template>
+  <vue-identify-network>
+    <span slot="unknown"> REEE! Unable to identify your network type. </span>
+    <span slot="slow">
+      <img src="cat.gif" alt="you got slow internet" />
+    </span>
+    <span slot="fast">
+      <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4" />
+        <source src="mov_bbb.ogg" type="video/ogg" />
+        Your browser does not support HTML5 video.
+      </video>
+    </span>
+  </vue-identify-network>
+</template>
+
+<script lang="ts">
+  import { defineComponent, ref } from 'vue';
+  import type { Ref } from 'vue';
+  import { VueIdentifyNetwork } from 'vue-identify-network';
+
+  export default defineComponent({
+    components: {
+      VueIdentifyNetwork,
+    },
+    setup() {
+      const online: Ref<boolean> = ref(false);
+      const onNetworkChange = (status: boolean) => {
+        online.value = status;
+      };
+      return { online, onNetworkChange };
+    },
+  });
+</script>
+```
 
 ## API
 
 ### Slots
-| Name            | Description                                                 |
-| --------------  | -----------------------------------------------------------       |
-| `unknown`       | Named slot for when the type of connection is unidentifyable       |
-| `slow`          | Named slot for when `navigator.connection.effectiveType === '2g'`  |
-| `fast`          | Named slot for when `navigator.connection.effectiveType !== '2g'`  |
+
+| Name      | Description                                                       |
+| --------- | ----------------------------------------------------------------- |
+| `unknown` | Named slot for when the type of connection is unidentifyable      |
+| `slow`    | Named slot for when `navigator.connection.effectiveType === '2g'` |
+| `fast`    | Named slot for when `navigator.connection.effectiveType !== '2g'` |
+
 ### Props
 
-| Name            | Type   | Required? | Default              | Description                                                 |
-| --------------  | ------ | --------- | ---------            | ----------------------------------------------------------- |
-| `unknown-class`  | String  | No        | null                   | Styling the `div` which you want to give if network type is undetected.  |
-| `slow-class` | String | No        | null                   | Styling the `div` which you want to give if network type is slow. |
-| `fast-class`      | String | No        | null   | Styling the `div` which you want to give if network type is fast.    |
+| Name            | Type   | Required? | Default | Description                                                             |
+| --------------- | ------ | --------- | ------- | ----------------------------------------------------------------------- |
+| `unknown-class` | String | No        | null    | Styling the `div` which you want to give if network type is undetected. |
+| `slow-class`    | String | No        | null    | Styling the `div` which you want to give if network type is slow.       |
+| `fast-class`    | String | No        | null    | Styling the `div` which you want to give if network type is fast.       |
 
 ### Events
 
-| Name                  | Returns | Description            |
-| ---                   | ---     | ---                    |
-| `@network-type` | String  | Emits a string value  |
-| `@network-speed` | String  | Emits a number value  |
+| Name             | Returns | Description          |
+| ---------------- | ------- | -------------------- |
+| `@network-type`  | String  | Emits a string value |
+| `@network-speed` | String  | Emits a number value |
 
-## Built with
-
-- [TypeScript](https://www.typescriptlang.org/).
-- [Vue 2](https://v3.vuejs.org)
-
-## Contributing 
+## Contributing
 
 1. Fork it ( [https://github.com/vinayakkulkarni/vue-identify-network/fork](https://github.com/vinayakkulkarni/vue-identify-network/fork) )
 2. Create your feature branch (`git checkout -b feat/new-feature`)
@@ -186,11 +198,11 @@ Vue.component('example-component', {
 4. Push to the branch (`git push origin feat/new-feature`)
 5. Create a new [Pull Request](https://github.com/vinayakkulkarni/vue-identify-network/compare)
 
-_Note_: 
-1. Please contribute using [Github Flow](https://guides.github.com/introduction/flow/)
+_Note_:
+
+1. Please contribute using [GitHub Flow](https://web.archive.org/web/20191104103724/https://guides.github.com/introduction/flow/)
 2. Commits & PRs will be allowed only if the commit messages & PR titles follow the [conventional commit standard](https://www.conventionalcommits.org/), _read more about it [here](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)_
 3. PS. Ensure your commits are signed. _[Read why](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)_
-
 
 ## Author
 

@@ -104,5 +104,4 @@ dist
 .tern-port
 .DS_Store
 
-# Static storybook
-static/storybook
+sw.*

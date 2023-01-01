@@ -13,14 +13,33 @@
 </template>
 
 <script lang="ts">
-  import {
-    defineComponent,
-    onBeforeUnmount,
-    onMounted,
-    ref,
-  } from '@vue/composition-api';
-  import type { Ref, SetupContext, PropType } from '@vue/composition-api';
-  import type { NetworkType, Evented } from '../types';
+  import { defineComponent, onBeforeUnmount, onMounted, ref } from 'vue';
+  import type { Ref, SetupContext, PropType } from 'vue';
+  export type NetworkType = null | 'Unknown' | '2g' | '3g' | '4g' | 'wifi';
+
+  export type Evented = {
+    currentTarget: {
+      effectiveType: NetworkType;
+      downlink: number;
+    };
+  };
+
+  declare global {
+    interface Navigator {
+      connection: {
+        onchange: null | Function;
+        addEventListener(type: 'change', listener: (e: Evented) => void): void;
+        removeEventListener(
+          type: 'change',
+          listener: (e: Evented) => void,
+        ): void;
+        effectiveType: NetworkType;
+        rtt: number;
+        downlink: number;
+        saveData: boolean;
+      };
+    }
+  }
 
   export default defineComponent({
     name: 'VueIdentifyNetwork',
