@@ -1,3 +1,7 @@
+## [3.0.1](https://github.com/vinayakkulkarni/vue-identify-network/compare/v3.0.0...v3.0.1) (2023-01-01)
+
+
+
 # [3.0.0](https://github.com/vinayakkulkarni/vue-identify-network/compare/v2.0.0...v3.0.0) (2023-01-01)
 
 
