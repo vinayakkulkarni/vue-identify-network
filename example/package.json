@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "v-github-icon": "^3.0.1",
-    "vue-identify-network": "^2.0.0",
+    "vue-identify-network": "^3.0.0",
     "vue": "^3.2.45"
   },
   "devDependencies": {
