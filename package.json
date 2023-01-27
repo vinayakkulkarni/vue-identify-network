@@ -37,7 +37,7 @@
     "release:dry": "shipjs prepare --dry-run"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.0",
+    "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.0",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
