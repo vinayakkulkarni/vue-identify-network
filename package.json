@@ -58,7 +58,7 @@
     "sass": "^1.59.3",
     "shipjs": "^0.25.1",
     "stylelint": "^15.3.0",
-    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-prettier": "^2.0.0",
     "typescript": "^5.0.4",
