@@ -21,8 +21,7 @@
 
 ## Features
 
-- Detect offline & online events for your vue app.
-- Built from scratch usign Vue 2 & Composition API with TypeScript
+- Identify the Internet Speed ⚡️ your users have.
 - For Vue >= 3.x – `npm i vue-identify-network@latest`
 - For Vue 2 – `npm i vue-identify-network@2`
 
