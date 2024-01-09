@@ -40,7 +40,7 @@
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^17.7.0",
     "@types/node": "^20.8.7",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^5.62.0",
     "@vinayakkulkarni/prettier-config-vue": "^1.0.0",
     "@vitejs/plugin-vue": "^4.5.0",
