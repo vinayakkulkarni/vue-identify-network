@@ -11,7 +11,7 @@
   "dependencies": {
     "v-github-icon": "^3.2.1",
     "vue-identify-network": "^3.0.1",
-    "vue": "^3.4.21"
+    "vue": "^3.4.22"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
