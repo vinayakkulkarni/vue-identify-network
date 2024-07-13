@@ -1,4 +1,6 @@
 module.exports = {
-  installCommand: () => 'npm i --prefer-offline --no-audit --omit=optional',
-  publishCommand: () => 'npm publish --tag latest',
+  installCommand: () => 'bun i',
+  beforeCommitChanges: ({ exec }) => {
+    exec('./scripts/bump-jsr-version.cjs');
+  },
 };

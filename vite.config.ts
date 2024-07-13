@@ -1,20 +1,21 @@
-import vue from '@vitejs/plugin-vue';
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 import pkg from './package.json';
 
 const banner = `/*!
-* ${pkg.name} v${pkg.version}
-* (c) ${new Date().getFullYear()} ${pkg.author.name}
-* @license ${pkg.license}
-*/`;
+ * ${pkg.name} v${pkg.version}
+ * ${pkg.description}
+ * (c) ${new Date().getFullYear()} ${pkg.author.name}<${pkg.author.email}>
+ * Released under the ${pkg.license} License
+ */
+`;
 
 export default defineConfig({
-  plugins: [vue()],
   build: {
     target: 'esnext',
-    minify: 'esbuild',
     sourcemap: true,
+    reportCompressedSize: true,
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'VueIdentifyNetwork',
@@ -23,28 +24,23 @@ export default defineConfig({
     },
     commonjsOptions: {
       extensions: ['.js', '.ts', '.vue'],
+      strictRequires: true,
+      transformMixedEsModules: true,
       exclude: 'src/**',
       include: 'node_modules/**',
     },
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
       external: ['vue'],
       output: {
-        exports: 'named',
         banner,
+        exports: 'named',
         strict: true,
-        sourcemap: true,
-        // Provide global variables to use in the UMD build
-        // for externalized deps
+        extend: true,
         globals: {
           vue: 'vue',
-        },
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name === 'style.css') return 'vue-identify-network.css';
-          return assetInfo.name;
         },
       },
     },
   },
+  plugins: [vue()],
 });

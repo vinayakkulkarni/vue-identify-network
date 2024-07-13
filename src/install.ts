@@ -1,10 +1,12 @@
-import { App as Application } from 'vue';
+import { App as Application, Plugin } from 'vue';
 import VueIdentifyNetwork from './components/VueIdentifyNetwork.vue';
+import { setVueInstance } from './utils/config';
 
 let installed = false;
 
-const install = (app: Application) => {
+const install: Exclude<Plugin['install'], undefined> = (app: Application) => {
   if (!installed) {
+    setVueInstance(app);
     app.component('VueIdentifyNetwork', VueIdentifyNetwork);
     installed = true;
   }
