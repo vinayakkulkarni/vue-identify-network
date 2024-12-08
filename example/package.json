@@ -11,7 +11,7 @@
   "dependencies": {
     "unocss": "^0.61.3",
     "v-github-icon": "^3.2.2",
-    "vue": "^3.4.31",
+    "vue": "^3.5.13",
     "vue-identify-network": "^3.0.1"
   },
   "devDependencies": {
