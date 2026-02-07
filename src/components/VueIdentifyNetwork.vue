@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { ref, defineModel, computed, onBeforeUnmount, onMounted } from 'vue';
+  import { ref, computed, onBeforeUnmount, onMounted } from 'vue';
 
   export type NetworkType = null | 'Unknown' | '2g' | '3g' | '4g' | 'wifi';
   export type Evented = {
