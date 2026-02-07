@@ -2,16 +2,10 @@
   "name": "vue-identify-network",
   "description": "Identify the network your users are using!",
   "version": "3.0.1",
-  "main": "./dist/vue-identify-network.js",
-  "module": "./dist/vue-identify-network.js",
-  "umd": "./dist/vue-identify-network.umd.cjs",
-  "unpkg": "./dist/vue-identify-network.cjs",
-  "jsdelivr": "./dist/vue-identify-network.cjs",
-  "cdn": "./dist/vue-identify-network.min.js",
   "exports": {
     ".": {
       "import": "./dist/vue-identify-network.js",
-      "require": "./dist/vue-identify-network.umd.cjs"
+      "types": "./dist/index.d.ts"
     }
   },
   "types": "./dist/index.d.ts",
@@ -20,55 +14,33 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly && prettier --write dist/*{cjs,js,ts}",
+    "lint": "oxlint --config .oxlintrc.jsonc",
+    "lint:fix": "oxlint --fix --config .oxlintrc.jsonc",
+    "format": "oxfmt --config .oxfmtrc.jsonc .",
+    "format:check": "oxfmt --check --config .oxfmtrc.jsonc .",
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
     "test": "echo 'test!'",
-    "prepare": "is-ci || husky",
-    "lint": "bun run lint:prettier && bun run lint:eslint && bun run lint:css",
-    "lintfix": "bun run lint:prettier:fix && bun run lint:eslint:fix && bun run lint:css:fix",
-    "lint:js": "bun run lint:eslint && bun run lint:prettier",
-    "lint:eslint": "eslint \"{,!(node_modules|dist)/**/}*.{js,ts,vue}\"",
-    "lint:eslint:fix": "eslint --fix \"{,!(node_modules|dist)/**/}*.{js,ts,vue}\"",
-    "lint:prettier": "prettier --check \"{,!(node_modules|dist)/**/}*.{js,ts,vue}\"",
-    "lint:prettier:fix": "prettier --write \"{,!(node_modules|dist)/**/}*.{js,ts,vue}\"",
-    "lint:css": "stylelint \"{,!(node_modules|dist)/**/}*.{css,scss,vue}\"",
-    "lint:css:fix": "stylelint --fix \"{,!(node_modules|dist)/**/}*.{css,scss,vue}\"",
-    "release": "shipjs prepare",
-    "release:auto": "shipjs prepare --yes",
-    "release:dry": "shipjs prepare --dry-run"
+    "prepare": "is-ci || husky"
   },
   "peerDependencies": {
     "vue": "^3.4.31"
   },
   "dependencies": {
-    "vue": "^3.4.31"
+    "vue": "^3.5.27"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@types/node": "^20.14.10",
-    "@typescript-eslint/eslint-plugin": "^7.16.0",
-    "@typescript-eslint/parser": "^7.16.0",
-    "@vinayakkulkarni/prettier-config-vue": "^1.0.0",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsdoc": "^48.5.2",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-security": "^1.7.1",
-    "eslint-plugin-vue": "^9.27.0",
-    "husky": "^9.1.5",
-    "is-ci": "^3.0.1",
-    "lint-staged": "^15.2.7",
-    "prettier": "^3.3.2",
-    "sass": "^1.77.6",
-    "shipjs": "^0.26.3",
-    "stylelint": "^16.6.1",
-    "stylelint-config-recommended-vue": "^1.5.0",
-    "stylelint-prettier": "^5.0.2",
-    "typescript": "^5.5.3",
-    "vite": "^5.3.3",
-    "vue-tsc": "^2.0.26"
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@types/node": "^25.2.1",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "husky": "latest",
+    "is-ci": "latest",
+    "lint-staged": "latest",
+    "oxlint": "latest",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vue-tsc": "^3.2.4"
   },
   "keywords": [
     "vuejs",
