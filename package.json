@@ -1,7 +1,7 @@
 {
   "name": "vue-identify-network",
   "description": "Identify the network your users are using!",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "exports": {
     ".": {
       "import": "./dist/vue-identify-network.js",
