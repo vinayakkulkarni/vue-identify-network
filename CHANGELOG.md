@@ -1,5 +1,24 @@
 # Changelog
 
+## [4.0.1](https://github.com/vinayakkulkarni/vue-identify-network/compare/vue-identify-network-v4.0.0...vue-identify-network-v4.0.1) (2026-02-10)
+
+
+### Bug Fixes
+
+* **deps:** bump dependabot/fetch-metadata in the actions-minor group ([#1795](https://github.com/vinayakkulkarni/vue-identify-network/issues/1795)) ([67de07a](https://github.com/vinayakkulkarni/vue-identify-network/commit/67de07a50f774bc406394b0081a07c80fbf70c02))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump @vitejs/plugin-vue from 5.2.4 to 6.0.4 in /example ([#1920](https://github.com/vinayakkulkarni/vue-identify-network/issues/1920)) ([10c2cae](https://github.com/vinayakkulkarni/vue-identify-network/commit/10c2caec0a6b9cef42e5b534281011d30613b634))
+* **deps-dev:** bump vite from 5.4.21 to 7.3.1 in /example ([#1921](https://github.com/vinayakkulkarni/vue-identify-network/issues/1921)) ([616cc3f](https://github.com/vinayakkulkarni/vue-identify-network/commit/616cc3f5871642bb4f3009cc52b428060408a1b8))
+* **deps-dev:** bump vue-tsc from 2.2.12 to 3.2.1 in /example ([#1908](https://github.com/vinayakkulkarni/vue-identify-network/issues/1908)) ([d344788](https://github.com/vinayakkulkarni/vue-identify-network/commit/d3447887ea1bbbc89e7946640561bda1670800b2))
+* **deps-dev:** update @types/node requirement from ^25.2.1 to ^25.2.2 ([#1912](https://github.com/vinayakkulkarni/vue-identify-network/issues/1912)) ([b5e3682](https://github.com/vinayakkulkarni/vue-identify-network/commit/b5e368293720a59f79b8bc69c965eeef8da56ad8))
+* **deps-dev:** update @types/node requirement from ^25.2.2 to ^25.2.3 ([#1924](https://github.com/vinayakkulkarni/vue-identify-network/issues/1924)) ([539fedf](https://github.com/vinayakkulkarni/vue-identify-network/commit/539fedf83235e4b37191eec2f08ca1429db7fbf4))
+* **deps-dev:** update sass requirement in /example ([#1919](https://github.com/vinayakkulkarni/vue-identify-network/issues/1919)) ([ef5359f](https://github.com/vinayakkulkarni/vue-identify-network/commit/ef5359f609e6fc04a2f56191fe28175a87d988d0))
+* **deps-dev:** update typescript requirement in /example ([#1904](https://github.com/vinayakkulkarni/vue-identify-network/issues/1904)) ([0c92afc](https://github.com/vinayakkulkarni/vue-identify-network/commit/0c92afcbe690a06b5b508e513a09c7dcfd2bb72f))
+* **deps-dev:** update vue-tsc requirement in /example ([#1926](https://github.com/vinayakkulkarni/vue-identify-network/issues/1926)) ([f8108d8](https://github.com/vinayakkulkarni/vue-identify-network/commit/f8108d8e00c7319044d37a6dc500903788a6ac13))
+
 ## [4.0.0](https://github.com/vinayakkulkarni/vue-identify-network/compare/vue-identify-network-v3.0.1...vue-identify-network-v4.0.0) (2026-02-07)
 
 
