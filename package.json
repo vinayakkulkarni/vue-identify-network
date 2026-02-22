@@ -26,7 +26,7 @@
     "vue": "^3.4.31"
   },
   "dependencies": {
-    "vue": "^3.5.27"
+    "vue": "^3.5.28"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
