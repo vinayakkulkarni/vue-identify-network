@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "unocss": "^0.61.3",
-    "v-github-icon": "^3.2.2",
+    "v-github-icon": "^3.3.0",
     "vue": "^3.4.31",
     "vue-identify-network": "^3.0.1"
   },
