@@ -15,7 +15,7 @@
     "vue-identify-network": "^3.0.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.5",
+    "@vitejs/plugin-vue": "^6.0.6",
     "sass": "^1.99.0",
     "typescript": "^6.0.2",
     "vite": "^8.0.8",
