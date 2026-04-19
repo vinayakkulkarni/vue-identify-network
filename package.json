@@ -41,7 +41,7 @@
     "unplugin-vue": "^7.1.1",
     "vite": "^8.0.8",
     "vite-plus": "^0.1.18",
-    "vue-tsc": "^3.2.6"
+    "vue-tsc": "^3.2.7"
   },
   "keywords": [
     "vuejs",
