@@ -40,7 +40,7 @@
     "typescript": "^6.0.3",
     "unplugin-vue": "^7.1.1",
     "vite": "^8.0.9",
-    "vite-plus": "^0.1.18",
+    "vite-plus": "^0.1.19",
     "vue-tsc": "^3.2.7"
   },
   "keywords": [
