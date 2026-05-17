@@ -1,3 +1,6 @@
+packages:
+  - 'example'
+
 strictDepBuilds: false
 ignoredBuiltDependencies:
   - '@parcel/watcher'
