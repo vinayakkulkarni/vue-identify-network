@@ -39,8 +39,8 @@
     }
   },
   "scripts": {
-    "lint": "vp lint",
-    "lint:fix": "vp lint --fix",
+    "lint": "vp lint src",
+    "lint:fix": "vp lint --fix src",
     "format": "vp fmt",
     "format:check": "vp fmt --check",
     "build": "vp pack",
