@@ -13,18 +13,25 @@ jobs:
         working-directory: './example/'
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
 
-      - name: Setup bun env 🐰
-        uses: oven-sh/setup-bun@v1
+      - name: Setup pnpm 📦
+        uses: pnpm/action-setup@v6
+
+      - name: Setup Node.js 🟢
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+          cache-dependency-path: 'example/pnpm-lock.yaml'
 
       - name: Install dependencies 🚀
-        run: bun install
+        run: pnpm install --frozen-lockfile --ignore-workspace
 
       - name: Run build 🏁
-        run: bun run build
+        run: pnpm run build
 
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4.0.0

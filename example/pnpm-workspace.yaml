@@ -1,0 +1,3 @@
+strictDepBuilds: false
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
