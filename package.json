@@ -1,18 +1,43 @@
 {
   "name": "vue-identify-network",
-  "description": "Identify the network your users are using!",
   "version": "4.0.0",
+  "private": false,
+  "description": "Identify the network your users are using!",
+  "keywords": [
+    "detect",
+    "identify-2g",
+    "identify-3g",
+    "identify-4g",
+    "internet-connectivity",
+    "network-identification",
+    "vuejs"
+  ],
+  "homepage": "https://github.com/vinayakkulkarni/vue-identify-network#readme",
+  "bugs": {
+    "url": "https://github.com/vinayakkulkarni/vue-identify-network/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vinayak Kulkarni",
+    "email": "inbox.vinayak@gmail.com",
+    "url": "https://vinayakkulkarni.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinayakkulkarni/vue-identify-network.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
   },
-  "types": "./dist/index.d.ts",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "lint": "vp lint",
     "lint:fix": "vp lint --fix",
@@ -22,11 +47,8 @@
     "test": "echo 'test!'",
     "prepare": "is-ci || husky"
   },
-  "peerDependencies": {
-    "vue": "^3.4.31"
-  },
   "dependencies": {
-    "vue": "^3.5.31"
+    "vue": "^3.5.34"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
@@ -43,32 +65,9 @@
     "vite-plus": "^0.1.21",
     "vue-tsc": "^3.2.9"
   },
-  "keywords": [
-    "vuejs",
-    "detect",
-    "internet-connectivity",
-    "network-identification",
-    "identify-2g",
-    "identify-3g",
-    "identify-4g"
-  ],
-  "author": {
-    "name": "Vinayak Kulkarni",
-    "email": "inbox.vinayak@gmail.com",
-    "url": "https://vinayakkulkarni.dev"
+  "peerDependencies": {
+    "vue": "^3.4.31"
   },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vinayakkulkarni/vue-identify-network.git"
-  },
-  "private": false,
-  "sideEffects": false,
-  "bugs": {
-    "url": "https://github.com/vinayakkulkarni/vue-identify-network/issues"
-  },
-  "homepage": "https://github.com/vinayakkulkarni/vue-identify-network#readme",
-  "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -79,5 +78,6 @@
       "name": "node",
       "version": ">=24"
     }
-  }
+  },
+  "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499"
 }
