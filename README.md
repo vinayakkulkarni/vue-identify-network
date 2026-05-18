@@ -1,20 +1,13 @@
 # Vue Identify Network ⚡️
 
-[![CI](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/ci.yml?logo=github-actions&branch=main)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/ci.yml)
-[![CodeQL](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/codeql.yml?logo=github-actions&branch=main)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/codeql.yml)
-[![Ship.js Trigger](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/shipjs-trigger.yml?label=⛴%20Ship.js%20trigger)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/shipjs-trigger.yml)
+[![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/pipeline.yml?logo=github-actions)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/pipeline.yml)
 [![npm](https://img.shields.io/npm/dm/vue-identify-network?logo=npm)](http://npm-stat.com/charts.html?package=vue-identify-network)
 [![npm](https://img.shields.io/npm/v/vue-identify-network/latest?logo=npm)](https://www.npmjs.com/package/vue-identify-network)
 [![npm bundle size (version)](https://img.shields.io/bundlephobia/min/vue-identify-network/latest?label=@latest%20size&logo=vue.js)](https://bundlephobia.com/package/vue-identify-network@latest)
 [![npm type definitions](https://img.shields.io/npm/types/vue-identify-network)](https://github.com/vinayakkulkarni/vue-identify-network/blob/master/package.json)
-[![DeepScan grade](https://deepscan.io/api/teams/9055/projects/18331/branches/446995/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9055&pid=18331&bid=446995)
-[![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinayakkulkarni/vue-identify-network)](https://snyk.io/test/github/vinayakkulkarni/vue-identify-network)
 [![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/vue-identify-network?logo=github)](https://github.com/vinayakkulkarni/vue-identify-network/graphs/contributors)
 
-[![eslint](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/eslint?logo=eslint)](https://eslint.org/)
-[![prettier](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/prettier?logo=prettier)](https://prettier.io/)
-[![vite](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/vite?logo=vite)](https://vitejs.dev/)
-[![vue](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/vue?logo=vue.js)](https://vuejs.org/)
+[![vite-plus](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/vue-identify-network/dev/vite-plus?logo=vite)](https://github.com/voidzero-dev/vite-plus)
 [![typescript](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/typescript?logo=TypeScript)](https://www.typescriptlang.org/)
 
 ⚠️ Docs are for Vue 3, for Vue 2 docs, [click here](https://github.com/vinayakkulkarni/vue-identify-network/tree/v2.0.0#vue-identify-network-%EF%B8%8F)
