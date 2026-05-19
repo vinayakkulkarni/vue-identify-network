@@ -1,6 +1,6 @@
 {
   "name": "vue-identify-network",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "private": false,
   "description": "Identify the network your users are using!",
   "keywords": [
