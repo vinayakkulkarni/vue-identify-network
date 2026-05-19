@@ -13,6 +13,19 @@ export default defineConfig({
       neverBundle: ['vue'],
     },
   },
+  lint: {
+    plugins: ['typescript', 'vue', 'import'],
+    ignorePatterns: [
+      '.nuxt',
+      '.output',
+      'dist',
+      'node_modules',
+      '.wrangler',
+      'coverage',
+      '*.min.js',
+      '*.min.css',
+    ],
+  },
   fmt: {
     printWidth: 80,
     semi: true,
