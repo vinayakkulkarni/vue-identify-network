@@ -1,22 +1,30 @@
 # Vue Identify Network ⚡️
 
-[![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/pipeline.yml?logo=github-actions)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/pipeline.yml)
-[![npm](https://img.shields.io/npm/dm/vue-identify-network?logo=npm)](http://npm-stat.com/charts.html?package=vue-identify-network)
-[![npm](https://img.shields.io/npm/v/vue-identify-network/latest?logo=npm)](https://www.npmjs.com/package/vue-identify-network)
-[![npm bundle size (version)](https://img.shields.io/bundlephobia/min/vue-identify-network/latest?label=@latest%20size&logo=vue.js)](https://bundlephobia.com/package/vue-identify-network@latest)
-[![npm type definitions](https://img.shields.io/npm/types/vue-identify-network)](https://github.com/vinayakkulkarni/vue-identify-network/blob/master/package.json)
-[![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/vue-identify-network?logo=github)](https://github.com/vinayakkulkarni/vue-identify-network/graphs/contributors)
+<!-- Badges -->
 
-[![vite-plus](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/vue-identify-network/dev/vite-plus?logo=vite)](https://github.com/voidzero-dev/vite-plus)
-[![typescript](https://img.shields.io/npm/dependency-version/vue-identify-network/dev/typescript?logo=TypeScript)](https://www.typescriptlang.org/)
+[![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/pipeline.yml?branch=main&logo=github-actions&label=pipeline)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/pipeline.yml)
+[![GitHub release](https://img.shields.io/github/v/release/vinayakkulkarni/vue-identify-network?sort=semver&logo=github&label=release)](https://github.com/vinayakkulkarni/vue-identify-network/releases)
+[![npm](https://img.shields.io/npm/v/vue-identify-network?logo=npm&label=npm)](https://www.npmjs.com/package/vue-identify-network)
+[![JSR](https://img.shields.io/jsr/v/@vinayakkulkarni/vue-identify-network?logo=jsr&label=jsr)](https://jsr.io/@vinayakkulkarni/vue-identify-network)
+[![npm downloads](https://img.shields.io/npm/dm/vue-identify-network?logo=npm&label=downloads)](http://npm-stat.com/charts.html?package=vue-identify-network)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/vue-identify-network?label=size)](https://bundlephobia.com/package/vue-identify-network@latest)
+[![types](https://img.shields.io/npm/types/vue-identify-network?logo=typescript&label=types)](https://github.com/vinayakkulkarni/vue-identify-network/blob/main/package.json)
+[![License](https://img.shields.io/github/license/vinayakkulkarni/vue-identify-network?logo=github&label=license)](./LICENSE)
+
+[![vite-plus](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/vue-identify-network/dev/vite-plus?logo=vite&label=vite-plus)](https://github.com/voidzero-dev/vite-plus)
+[![typescript](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/vue-identify-network/dev/typescript?logo=TypeScript&label=typescript)](https://www.typescriptlang.org/)
+[![pnpm](https://img.shields.io/github/package-json/packageManager/vinayakkulkarni/vue-identify-network?label=pnpm&logo=pnpm)](https://pnpm.io/)
+[![node](https://img.shields.io/node/v/vue-identify-network?logo=node.js&label=node)](https://nodejs.org/)
+
+<!-- End Badges -->
 
 ⚠️ Docs are for Vue 3, for Vue 2 docs, [click here](https://github.com/vinayakkulkarni/vue-identify-network/tree/v2.0.0#vue-identify-network-%EF%B8%8F)
 
 ## Features
 
 - Identify the Internet Speed ⚡️ your users have.
-- For Vue >= 3.x – `npm i vue-identify-network@latest`
-- For Vue 2 – `npm i vue-identify-network@2`
+- For Vue >= 3.x – `pnpm add vue-identify-network@latest`
+- For Vue 2 – `pnpm add vue-identify-network@2`
 
 ## Table of Contents
 
@@ -47,7 +55,7 @@
 ### Installation
 
 ```sh
-npm install --save vue-identify-network
+pnpm add vue-identify-network
 ```
 
 CDN: [UNPKG](https://unpkg.com/vue-identify-network/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/vue-identify-network/dist/) (available as `window.VueIdentifyNetwork`)
@@ -56,10 +64,10 @@ CDN: [UNPKG](https://unpkg.com/vue-identify-network/dist/) | [jsDelivr](https://
 
 ```bash
 # install dependencies
-$ npm install
+$ pnpm install
 
 # package the library
-$ npm run build
+$ pnpm run build
 ```
 
 ### Usage

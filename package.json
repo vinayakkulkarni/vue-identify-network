@@ -2,7 +2,7 @@
   "name": "vue-identify-network",
   "version": "4.0.0",
   "private": false,
-  "description": "Identify the network your users are using!",
+  "description": "Vue 3 component and composable for detecting network speed, connection type (4G, wifi, 2g, 3g), data saver, and Network Information API.",
   "keywords": [
     "detect",
     "identify-2g",

@@ -6,5 +6,6 @@
     "exclude": [
       "!dist"
     ]
-  }
+  },
+  "description": "Vue 3 component and composable for detecting network speed, connection type (4G, wifi, 2g, 3g), data saver, and Network Information API."
 }
