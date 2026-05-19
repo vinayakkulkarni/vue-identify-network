@@ -1,8 +1,10 @@
 {
   "name": "@vinayakkulkarni/vue-identify-network",
   "version": "4.0.0",
-  "exports": "./dist/vue-identify-network.js",
+  "exports": "./dist/index.js",
   "publish": {
-    "exclude": ["!dist"]
+    "exclude": [
+      "!dist"
+    ]
   }
 }
