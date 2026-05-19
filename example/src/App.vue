@@ -3,18 +3,21 @@
   import { VGithubIcon } from 'v-github-icon';
   import { VueIdentifyNetwork } from 'vue-identify-network';
 
+  type NetworkType = null | 'Unknown' | '2g' | '3g' | '4g' | 'wifi';
+  type NetworkSpeed = number | 'Unknown';
+
   const state = reactive({
     unknown: 'Unable to detect your network type.',
     slow: "You've got quite 💩 internet",
     fast: 'You got ⚡️Internet',
-    device: '',
-    speed: '',
+    device: null as NetworkType,
+    speed: 'Unknown' as NetworkSpeed,
   });
-  const onNetworkType = (type: string) => {
+  const onNetworkType = (type: NetworkType) => {
     state.device = type;
     console.log('type: ', type);
   };
-  const onNetworkSpeed = (speed: string) => {
+  const onNetworkSpeed = (speed: NetworkSpeed) => {
     state.speed = speed;
     console.log('speed: ', speed);
   };
