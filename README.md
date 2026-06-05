@@ -3,6 +3,7 @@
 <!-- Badges -->
 
 [![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/vue-identify-network/pipeline.yml?branch=main&logo=github-actions&label=pipeline)](https://github.com/vinayakkulkarni/vue-identify-network/actions/workflows/pipeline.yml)
+[![Doctor](https://img.shields.io/badge/doctor-audited-2ea043?logo=vuedotjs&label=doctor)](https://github.com/geoql/doctor)
 [![GitHub release](https://img.shields.io/github/v/release/vinayakkulkarni/vue-identify-network?sort=semver&logo=github&label=release)](https://github.com/vinayakkulkarni/vue-identify-network/releases)
 [![npm](https://img.shields.io/npm/v/vue-identify-network?logo=npm&label=npm)](https://www.npmjs.com/package/vue-identify-network)
 [![JSR](https://img.shields.io/jsr/v/@vinayakkulkarni/vue-identify-network?logo=jsr&label=jsr)](https://jsr.io/@vinayakkulkarni/vue-identify-network)
