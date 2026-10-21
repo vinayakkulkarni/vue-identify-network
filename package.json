@@ -1,6 +1,6 @@
 {
   "name": "vue-identify-network",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "private": false,
   "description": "Vue 3 component and composable for detecting network speed, connection type (4G, wifi, 2g, 3g), data saver, and Network Information API.",
   "keywords": [
@@ -59,7 +59,7 @@
     "lint-staged": "^17.6.0",
     "sass": "^1.105.2",
     "typescript": "^6.0.3",
-    "unplugin-vue": "^8.0.0",
+    "unplugin-vue": "^7.2.0",
     "vite-plus": "^1.3.0",
     "vue-tsc": "^3.3.13"
   },
