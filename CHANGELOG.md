@@ -1,5 +1,14 @@
 # Changelog
 
+## [5.0.1](https://github.com/vinayakkulkarni/vue-identify-network/compare/v5.0.0...v5.0.1) (2026-10-21)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump @types/node from 25.9.0 to 26.6.5 ([#2031](https://github.com/vinayakkulkarni/vue-identify-network/issues/2031)) ([b977487](https://github.com/vinayakkulkarni/vue-identify-network/commit/b977487ffbdd1ace371c5ed2c9dd4ff20603a64c))
+* **deps-dev:** bump the npm-development group with 10 updates ([#2028](https://github.com/vinayakkulkarni/vue-identify-network/issues/2028)) ([8f6514a](https://github.com/vinayakkulkarni/vue-identify-network/commit/8f6514a0ad7481507b79ae230f31b6fc406e8285))
+* **deps-dev:** bump vite-plus from 0.1.21 to 1.1.0 ([#2026](https://github.com/vinayakkulkarni/vue-identify-network/issues/2026)) ([ce1b921](https://github.com/vinayakkulkarni/vue-identify-network/commit/ce1b921188cdd49798a5a75f26d3cb24ff9b5ead))
+
 ## [5.0.0](https://github.com/vinayakkulkarni/vue-identify-network/compare/v4.0.0...v5.0.0) (2026-05-22)
 
 
