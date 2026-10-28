@@ -1,5 +1,29 @@
 # Changelog
 
+## [5.0.1](https://github.com/vinayakkulkarni/vue-identify-network/compare/v5.0.0...v5.0.1) (2026-10-28)
+
+
+### Bug Fixes
+
+* hold typescript on 6.x and fix red main CI ([c81666d](https://github.com/vinayakkulkarni/vue-identify-network/commit/c81666d911cd47ffa596b85f9e2fcc4621c008a2))
+
+
+### Documentation
+
+* link live demo and related projects ([#2036](https://github.com/vinayakkulkarni/vue-identify-network/issues/2036)) ([6258544](https://github.com/vinayakkulkarni/vue-identify-network/commit/62585445af4e7c0ee78ae2e3f66bf87b0a7e5861))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump @types/node from 25.9.0 to 26.6.5 ([#2031](https://github.com/vinayakkulkarni/vue-identify-network/issues/2031)) ([b977487](https://github.com/vinayakkulkarni/vue-identify-network/commit/b977487ffbdd1ace371c5ed2c9dd4ff20603a64c))
+* **deps-dev:** bump the npm-development group with 10 updates ([#2028](https://github.com/vinayakkulkarni/vue-identify-network/issues/2028)) ([8f6514a](https://github.com/vinayakkulkarni/vue-identify-network/commit/8f6514a0ad7481507b79ae230f31b6fc406e8285))
+* **deps-dev:** bump the npm-development group with 2 updates ([#2033](https://github.com/vinayakkulkarni/vue-identify-network/issues/2033)) ([8ab8e6c](https://github.com/vinayakkulkarni/vue-identify-network/commit/8ab8e6cff6cf99d0c8ca7b49a8ed61d307a3adc9))
+* **deps-dev:** bump typescript from 6.0.3 to 7.0.2 ([#2032](https://github.com/vinayakkulkarni/vue-identify-network/issues/2032)) ([33bb16b](https://github.com/vinayakkulkarni/vue-identify-network/commit/33bb16b86c0d632a1da5fcb30be4bfa5bfed34bf))
+* **deps-dev:** bump unplugin-vue from 7.2.0 to 8.0.0 ([#2030](https://github.com/vinayakkulkarni/vue-identify-network/issues/2030)) ([a0dc5c8](https://github.com/vinayakkulkarni/vue-identify-network/commit/a0dc5c8c86453c0b483e3c0b8b78f99cc489d913))
+* **deps-dev:** bump vite-plus ([#2034](https://github.com/vinayakkulkarni/vue-identify-network/issues/2034)) ([40e0f9c](https://github.com/vinayakkulkarni/vue-identify-network/commit/40e0f9c986d52357d0e9d2f55859f0cea089aefd))
+* **deps-dev:** bump vite-plus from 0.1.21 to 1.1.0 ([#2026](https://github.com/vinayakkulkarni/vue-identify-network/issues/2026)) ([ce1b921](https://github.com/vinayakkulkarni/vue-identify-network/commit/ce1b921188cdd49798a5a75f26d3cb24ff9b5ead))
+* **deps-dev:** hold typescript on 6.x ([1b0a465](https://github.com/vinayakkulkarni/vue-identify-network/commit/1b0a465279229eb2082da93721d563d1dea2cafa))
+
 ## [5.0.0](https://github.com/vinayakkulkarni/vue-identify-network/compare/v4.0.0...v5.0.0) (2026-05-22)
 
 
