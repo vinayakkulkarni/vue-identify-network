@@ -19,6 +19,8 @@
 
 <!-- End Badges -->
 
+**[Live demo (StackBlitz)](https://stackblitz.com/edit/vue-identify-network?file=src/App.vue)** · [npm](https://www.npmjs.com/package/vue-identify-network) · [JSR](https://jsr.io/@vinayakkulkarni/vue-identify-network)
+
 ⚠️ Docs are for Vue 3, for Vue 2 docs, [click here](https://github.com/vinayakkulkarni/vue-identify-network/tree/v2.0.0#vue-identify-network-%EF%B8%8F)
 
 ## Features
@@ -43,6 +45,7 @@
     - [Props](#props)
     - [Events](#events)
   - [Contributing](#contributing)
+  - [More from the author](#more-from-the-author)
   - [Author](#author)
 
 ## Demo
@@ -202,9 +205,20 @@ _Note_:
 2. Commits & PRs will be allowed only if the commit messages & PR titles follow the [conventional commit standard](https://www.conventionalcommits.org/), _read more about it [here](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)_
 3. PS. Ensure your commits are signed. _[Read why](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)_
 
+## More from the author
+
+- [v-offline](https://v-offline.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network) — online/offline status component and composable for Vue 3
+- [v-pip](https://v-pip.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network) — Vue 3 wrapper for the Picture-in-Picture API
+- [v-clappr](https://v-clappr.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network) — Vue 3 wrapper for the Clappr media player
+- [v-intl](https://v-intl.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network) — native Intl formatting components for Vue 3
+- [nxui](https://nxui.geoql.in?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network) — animated copy-paste UI components for Vue 3 and Nuxt
+- [shadscan-vue](https://shadscan-vue.geoql.in?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network) — UI-fundamentals audit for shadcn-vue apps
+
+See every project at [vinayakkulkarni.dev/projects](https://vinayakkulkarni.dev/projects?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network) and [geoql.in](https://geoql.in?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network).
+
 ## Author
 
-**vue-identify-network** &copy; [Vinayak](https://vinayakkulkarni.dev), Released under the [MIT](./LICENSE) License.<br>
+**vue-identify-network** &copy; [Vinayak](https://vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/vue-identify-network/contributors)).
 
-> [vinayakkulkarni.dev](https://vinayakkulkarni.dev) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
+> [vinayakkulkarni.dev](https://vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=vue-identify-network) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
