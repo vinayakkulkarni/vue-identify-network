@@ -53,13 +53,13 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
     "@commitlint/config-conventional": "^21.2.4",
-    "@types/node": "^26.6.5",
+    "@types/node": "^26.6.6",
     "husky": "^9.1.7",
     "is-ci": "^4.1.0",
     "lint-staged": "^17.6.0",
-    "sass": "^1.106.1",
+    "sass": "^1.107.0",
     "typescript": "^6.0.3",
-    "unplugin-vue": "^8.0.0",
+    "unplugin-vue": "^8.0.1",
     "vite-plus": "^1.4.0",
     "vue-tsc": "^3.3.13"
   },
