@@ -1,5 +1,14 @@
 # Changelog
 
+## [5.0.2](https://github.com/vinayakkulkarni/vue-identify-network/compare/v5.0.1...v5.0.2) (2026-11-03)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump sass ([#2041](https://github.com/vinayakkulkarni/vue-identify-network/issues/2041)) ([11b540b](https://github.com/vinayakkulkarni/vue-identify-network/commit/11b540b5181ff517ca7ef6931432b19a4659750d))
+* **deps-dev:** bump the npm-development group with 3 updates ([#2037](https://github.com/vinayakkulkarni/vue-identify-network/issues/2037)) ([e248872](https://github.com/vinayakkulkarni/vue-identify-network/commit/e24887231bbe2e6787b01f414f01ee78e9e1d199))
+* **deps-dev:** bump vue-tsc ([#2040](https://github.com/vinayakkulkarni/vue-identify-network/issues/2040)) ([e2f56d1](https://github.com/vinayakkulkarni/vue-identify-network/commit/e2f56d1b6294ab6d3605995a12439d8342c6aa48))
+
 ## [5.0.1](https://github.com/vinayakkulkarni/vue-identify-network/compare/v5.0.0...v5.0.1) (2026-10-28)
 
 
