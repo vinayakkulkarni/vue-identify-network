@@ -1,5 +1,20 @@
 # Changelog
 
+## [5.0.2](https://github.com/vinayakkulkarni/vue-identify-network/compare/v5.0.1...v5.0.2) (2026-11-12)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump sass ([#2041](https://github.com/vinayakkulkarni/vue-identify-network/issues/2041)) ([11b540b](https://github.com/vinayakkulkarni/vue-identify-network/commit/11b540b5181ff517ca7ef6931432b19a4659750d))
+* **deps-dev:** bump sass ([#2046](https://github.com/vinayakkulkarni/vue-identify-network/issues/2046)) ([094c260](https://github.com/vinayakkulkarni/vue-identify-network/commit/094c260a591e160e376075f3e6605c8c9fda05b5))
+* **deps-dev:** bump the npm-development group ([#2043](https://github.com/vinayakkulkarni/vue-identify-network/issues/2043)) ([fb6bb14](https://github.com/vinayakkulkarni/vue-identify-network/commit/fb6bb140938f24a4bf9d6670efd7562d3509d8c7))
+* **deps-dev:** bump the npm-development group with 2 updates ([#2047](https://github.com/vinayakkulkarni/vue-identify-network/issues/2047)) ([46422cc](https://github.com/vinayakkulkarni/vue-identify-network/commit/46422ccc241a0ca27dcd9e61529885f052243f6b))
+* **deps-dev:** bump the npm-development group with 3 updates ([#2037](https://github.com/vinayakkulkarni/vue-identify-network/issues/2037)) ([e248872](https://github.com/vinayakkulkarni/vue-identify-network/commit/e24887231bbe2e6787b01f414f01ee78e9e1d199))
+* **deps-dev:** bump the npm-development group with 3 updates ([#2044](https://github.com/vinayakkulkarni/vue-identify-network/issues/2044)) ([9cfc3c5](https://github.com/vinayakkulkarni/vue-identify-network/commit/9cfc3c552456ce4d7d6b34dd8856cafa182e50c1))
+* **deps-dev:** bump the npm-development group with 4 updates ([#2042](https://github.com/vinayakkulkarni/vue-identify-network/issues/2042)) ([dd86812](https://github.com/vinayakkulkarni/vue-identify-network/commit/dd86812e3a3a372b9f3b450b2ba64f9c3f13595b))
+* **deps-dev:** bump vite in /example in the npm-development group ([#2048](https://github.com/vinayakkulkarni/vue-identify-network/issues/2048)) ([280674a](https://github.com/vinayakkulkarni/vue-identify-network/commit/280674aa1056f7eae9a86abae8c6df3027666183))
+* **deps-dev:** bump vue-tsc ([#2040](https://github.com/vinayakkulkarni/vue-identify-network/issues/2040)) ([e2f56d1](https://github.com/vinayakkulkarni/vue-identify-network/commit/e2f56d1b6294ab6d3605995a12439d8342c6aa48))
+
 ## [5.0.1](https://github.com/vinayakkulkarni/vue-identify-network/compare/v5.0.0...v5.0.1) (2026-10-28)
 
 
